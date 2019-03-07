@@ -19,7 +19,7 @@
         height: $(window).height()
 })
 }
-document.getElementById('vid').play();
+//document.getElementById('vid').play();
        
         $('.plus-icon').click(function() {
             $(this).hide();

@@ -126,6 +126,49 @@
 					<button class="mobile btn btn-primary main-btn">Lets Get Started</button>
 
 			</div>
+<!--partner start-->
+<div id="partner" class="container-fluid ">
+										<div class="servicesImg">
+										
+								<img src="img/service.png" />
+							</div>
+	<div class="container">
+		<h2 class="sec-title">Partner with Us</h2>
+		<p>
+			Partner with ROI Boutique and see what it is you’ve been missing and why we’re the industry’s fastest growing network. 
+When you become our client, we treat you as if you’re our only client. You will always get our undivided attention! 
+We serve a wide range of industries, including sports, health, finance, gaming, beauty and tech, so whatever your sector, we have the knowledge and experience to help your business flourish. And more importantly – we have the motivation. 
+We offer various performance marketing models, including CPA, COD, CPS, OPT-IN, CPL, CPC, and CPL. Finding the right one for you can take some fine tuning, so we’ll work alongside you to test a few and analyze which one’s going to generate the most revenue.
+We’re here for you no matter what. Let’s do this together, Shall we? 
+		</p>
+		<button class="btn btn-secondary" id="">Get Started</button>
+									<div class="row">
+								<div class="services-icons">
+									<div class="service">
+										<div class="service-img"><img src="img/service1.png" /></div>
+										<label>
+											Technology <span>+</span>
+										</label>
+									</div>
+									<div class="service">
+										<div class="service-img"><img src="img/service2.png" /></div>
+										<label>
+											Payout <span>+</span>
+										</label>
+									</div>
+									<div class="service">
+										<div class="service-img"><img src="img/service3.png" /></div>
+										<label>
+											24/7 Services <span>+</span>
+										</label>
+									</div>
+
+
+								</div>
+							</div>
+	</div>
+</div>
+<!--partner end-->
 
 			<!--advertisers start-->
 
@@ -199,48 +242,57 @@ wp_reset_postdata();
 
 			<div id="about" class="container-fluid ">
 				<div class="container">
-					<?php
-$loop = new WP_Query( array( 'post_type' => 'aboutUS') );
-if ( $loop->have_posts() ) :
-while ( $loop->have_posts() ) : $loop->the_post(); ?>
 						<div class="row">
 							<div class="col-md-6">
-								<h2 class="sec-title"><?php echo get_post_meta( get_the_ID(), 'sectionName', true ); ?></h2>
+								<h2 class="sec-title">ABout US</h2>
 								<div class="about_cont">
 									<div class="about_sec one" about="1">
 
-											<?php
-											$content = get_post_meta(get_the_ID(), 'about1_box' , true );
-												$content = htmlspecialchars_decode($content);
-												$content = wpautop( $content );
-												echo $content;
-											?>
+											<p>ROI Boutique consists of a professional team of media experts who excel in providing various online marketing services, including media buying services; affiliate marketing; lead generation; email marketing; social media; mobile marketing and much more. 
+Basically, we’re everything you need in a one-stop shop, tailored exclusively to your needs and with the knowledge, experience and motivation driven towards your success. 
+Performance-based marketing is our forte, and we use it to help our clients increase their sales. Our specialty is in turning traffic into conversions, using all of our powers. 
+What are our secret ingredients? Well, we use advanced tracking platforms; real-time optimization, geo-targeting, fully localized campaigns; smart funneling system; relentless monitoring and… the rest is a professional secret! If you want to hear more, you’re gonna have to get in touch. We’ll tell you all about how we can help your business grow. 
+We believe in results. Nothing more. </p>
 											<button type="button" class="btn btn-primary">
-												<?php echo get_post_meta( get_the_ID(), 'btn1', true ); ?>
+												GET STARTED
 											</button>
 
 									</div>
 									<div class="about_sec two dont-show" about="2">
-									<?php
-											$content = get_post_meta(get_the_ID(), 'about2_box' , true );
-												$content = htmlspecialchars_decode($content);
-												$content = wpautop( $content );
-												echo $content;
-											?>
+<h5>Our Mission</h5>
+<p>Our mission at ROI Boutique is the same whether you’re an advertiser or an affiliate: to help you take your performance marketing results to new heights.  
+Our company has driven growth for clients across many industries, including health, finance, gaming, sports, beauty and technology, and this has given us the knowledge and experience to help all our partners see better returns on their investments, whatever sector they’re in. 
+We constantly invest in our teams and technology and will always aim to remain the best in the industry. </p>
+
 											<button type="button" class="btn btn-primary">
-												<?php echo get_post_meta( get_the_ID(), 'btn2', true ); ?>
+												GET STARTED
 											</button>
 
 									</div>
 									<div class="about_sec three dont-show" about="3">
-									<?php
-											$content = get_post_meta(get_the_ID(), 'about3_box' , true );
-												$content = htmlspecialchars_decode($content);
-												$content = wpautop( $content );
-												echo $content;
-											?>
+<h5>Our Values</h5>
+<h6>Service</h6>
+<p>ROI Boutique is dedicated to giving you the best quality service possible. Our customer service team is always happy to offer you the advice and insights that will better help you reach your business goals, and our support service is on hand 24/7 to resolve problems and answer questions quickly.</p>
+<h6>Security</h6>
+<p>ROI Boutique operates a policy of robust data protection, so your information is always safe with us. We’re fully compliant with the EU’s General Data Protection Regulation (GDPR) and use the latest protocols and technologies to ensure that your personal data is kept private and used only in accordance with data protection laws. </p>
+<h6>Integrity</h6>
+<p>At ROI Boutique we work hard to gain and maintain your trust, whether you’re an affiliate, advertiser, publisher or agency. Trust is the key to our success and your confidence. When you sign up with us you can be sure of a first-rate service delivered transparently, reliably, and honestly.</p>
+
 											<button type="button" class="btn btn-primary">
-												<?php echo get_post_meta( get_the_ID(), 'btn3', true ); ?>
+												GET STARTED
+											</button>
+
+									</div>
+	<div class="about_sec four dont-show" about="4">
+		<h5>About the Team</h5>
+<p>The ROI Boutique team has expertise that span many key areas: We have exceled media buyers, affiliate managers, social media experts, mobile marketers and email marketers from various industries and markets, alongside professional marketing strategies, planners, researchers and analysts. 
+We also have our own ninja team of in-house software developers, web designers, analysts, content writers, 2 elves and a monkey. Ok, we don’t have a monkey.
+We love the online marketing industry and our team loves to go to work. If it’s not fun, it’s pointless. So, we make sure it’s fun for everyone. The results speak for themselves. 
+The ROI Boutique is not always a happy family, we fight some of the time, but we’re all SO dedicated, we CARE about our work as if it was our family, and our clients are a part of our work. We invite you to join our family. </p>
+
+
+											<button type="button" class="btn btn-primary">
+												GET STARTED
 											</button>
 
 									</div>
@@ -248,28 +300,22 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
 								<div class="about-arrows">
 									<div class="prev dont-show">
 									<span>PREV</span>
-										<div><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.png"/></div>
+										<div><img src="img/arrow.png"></div>
 										
 									</div>
 									<div class="next" data="1">
 									<span>NEXT</span>
-									<div><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.png"/></div>
+									<div><img src="img/arrow.png"></div>
 										
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="about-img">
-									<img src="<?php echo get_post_meta( get_the_ID(), 'podcast_file', true ); ?>" />
+									<img src="img/about.png" />
 								</div>
 							</div>
 						</div>
-
-						<?php endwhile;
-
-endif;
-wp_reset_postdata();
-?>
 				</div>
 			</div>
 
