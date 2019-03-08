@@ -1,4 +1,4 @@
-:root{--textcolor:#1b232e;--color1:#ca9f16;--main-font:bio-sans,sans-serif}
+:root{--textcolor:#1b232e;--color1:#ca9f16;--main-font:'Open Sans', sans-serif}
 @keyframes MoveUpDown {
 0%,100%{bottom:0}
 50%{bottom:-20px}
@@ -31,18 +31,22 @@ header{float:left;width:100%;padding-bottom:20px}
 .container-fluid{padding:0!important}
 .advImg{position:absolute;width:100%;z-index:-1;height:488px}
 .double-sec{height:488px;position:relative;transition:all .5s ease}
-.double-sec h2.sec-title{font-size:39px;text-transform:uppercase;color:#fff;margin:0;font-weight:400;float:left;margin-right:21px}
+.double-sec h2.sec-title{font-size:39px;text-transform:uppercase;color:#fff;margin:0;font-weight:400;float:left;margin-right:21px;/* width: 100%; */}
 .double-sec label{font-size:25px;text-transform:uppercase;color:#fff;font-weight:400;width:100%;margin:0}
 .plus-icon{font-size:24px;color:#ca9f18;border:3px solid #ca9f18;width:35px;height:35px;line-height:24px;text-align:center;margin-top:5px;font-weight:700;transition:all .5s ease;cursor:pointer;z-index:999}
-.double-sec .plus-icon{float:left}
-.adv-content p{opacity:0}
+.double-sec .plus-icon{float:left;position: absolute;top: -60px;}
+.adv-content p{opacity:0;margin-bottom: 0;}
 .video{margin-top:13px;float:left;width:100%;height:570px;overflow:hidden}
 .video>div{padding:0}
 div#mainSec{padding-bottom:115px}
-.double-sec .container .labels{padding-top:306px;float:left}
+.double-sec .container .labels{margin-top: 226px;float:left;z-index: 99999;position: relative;}
 .advImg img{height:100%;min-width:100%;object-fit:cover}
 .data-show p{transform:translateY(40px) translateZ(0);transition:transform 1s cubic-bezier(.23,1,.32,1),opacity .2s;line-height:17px}
-.adv-content{padding-top:20px;font-size:14px;float:left;width:700px;position:absolute;left:calc(563px + 28px);bottom:7px;transition:all .5s ease;max-width:100%}
+.adv-content{padding-top:20px;font-size:14px;float:left;width:700px;position:absolute;left:calc(563px + 28px);bottom:7px;transition:all .5s ease;max-width:100%;color: #fff;/* z-index: 99999; */}
+
+.adv-content.data-show {
+    z-index: 99999;
+}
 #services .adv-content{bottom:335px}
 .adv-content a{color:#ca9f19;font-size:20px;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid;text-decoration:none;opacity:0;display:inline-block;float:left;margin-top:40px}
 .sec.data-visible{background:rgba(32,40,50,.8)}
@@ -65,13 +69,13 @@ button.btn.btn-primary:hover{background:#466386}
 .servicesImg{position:absolute;width:100%;z-index:-1;height:100%}
 .servicesImg img{object-fit:cover}
 .service{width: calc(100%/3);float:left;text-align:center;color:#fff;position:relative;}
-.service label{font-weight:400;opacity:1;transition:all .5s ease;width:100%;margin-top:6px}
+.service label{font-weight:400;opacity:1;transition:all .5s ease;width:100%;margin-top: 26px;font-size: 22px;}
 .service label span{color: var(--color1);}
 #services .labels{padding-top:356px;float:left;font-weight:300}
 #services h2.sec-title{font-size:47px;text-transform:uppercase;color:#fff;margin:0;font-weight:300;float:left;margin-right:21px}
 #services .labels label{font-size:25px;text-transform:uppercase;color:#fff;font-weight:300;width:100%;margin:0}
 #services .plus-icon{float:left;z-index:9;position:relative;margin-top:12px}
-.services-icons{width: 100%;float:left;padding-top:204px;}
+.services-icons{width: 100%;float:left;padding-top:204px;margin-bottom: 58px;}
 div#contact{margin-top:118px;color:#3a4b63;padding-bottom:60px}
 #contact h4.sec-title{text-align:center;text-transform:uppercase;color:#3a4b63;font-size:28px;margin-bottom:0}
 #contact .slogan{color:var(--color1);text-align:center;text-transform:uppercase;font-size:53px;margin-bottom:76px}
@@ -153,6 +157,66 @@ h2.header2{display:none}
 @keyframes type {
 0%{opacity:0}
 100%{opacity:1}
+}
+div#partner {
+    text-align: center;
+    color: #fff;
+}
+
+#partner h2.sec-title {
+    font-family: var(--main-font);
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div#partner p {
+    font-size: 14px;
+    line-height: 26px;
+    padding: 0 100px;
+}
+.service-details .detail {
+    /* position: absolute; */
+    /* width: 100vw; */
+    /* left: 0; */
+    /* top: 0; */
+    /* background: #313f54; */
+    /* text-align: center; */
+    /* height: 100%; */
+    /* padding-top: 50px; */
+    display: none;
+}
+
+.detail.show .close-icon {
+    opacity: 1;
+    position: relative;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.detail .service {
+    width: 100%;
+}
+
+.service-details {
+    position: absolute;
+    /* width: 100vw; */
+    left: 0;
+    top: 0;
+    text-align: center;
+    height: 100%;
+    padding-top: 220px;
+    /* display:none */
+    z-index: 10;
+}
+.serv-bg.show {
+    background: #3a4b63;
+    width: 100%;
+    height: 846px;
+    position: absolute;
+    z-index: 9;
+    /* top: 0; */
+    /* bottom: 0; */
 }
 @media screen and (max-width:992px) {
     .wrapper.container-fluid {
@@ -266,7 +330,7 @@ div#mainSec{margin-top:50px;padding-bottom:145px}
 .double-sec h2.sec-title{font-size:50px}
 .plus-icon{width:40px;height:40px;border:4px solid;font-size:29px;line-height:27px;margin-top:12px;z-index:999}
 #services .plus-icon{margin-top:20px}
-.close-icon{width:40px;height:40px;font-size:29px;line-height:30px}
+.close-icon{width:40px;height:40px;font-size:29px;line-height:30px;}
 #about h2.sec-title{font-size:50px}
 .about_sec{font-size:16px;line-height:23px;margin-right:40px}
 .about-arrows{bottom:84px}

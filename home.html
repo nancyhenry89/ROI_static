@@ -15,6 +15,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link id="mainStyle" rel="stylesheet" href="css/styles.css" >
 
 		<!--<?php wp_head(); ?>-->
@@ -132,6 +133,7 @@
 										
 								<img src="img/service.png" />
 							</div>
+							<div class="serv-bg"></div>
 	<div class="container">
 		<h2 class="sec-title">Partner with Us</h2>
 		<p>
@@ -144,25 +146,72 @@ We’re here for you no matter what. Let’s do this together, Shall we?
 		<button class="btn btn-secondary" id="">Get Started</button>
 									<div class="row">
 								<div class="services-icons">
-									<div class="service">
+									<div class="service" serv-data="1">
 										<div class="service-img"><img src="img/service1.png" /></div>
 										<label>
 											Technology <span>+</span>
 										</label>
 									</div>
-									<div class="service">
+									<div class="service" serv-data="2">
 										<div class="service-img"><img src="img/service2.png" /></div>
 										<label>
 											Payout <span>+</span>
 										</label>
 									</div>
-									<div class="service">
+									<div class="service" serv-data="3">
 										<div class="service-img"><img src="img/service3.png" /></div>
 										<label>
 											24/7 Services <span>+</span>
 										</label>
 									</div>
 
+
+								</div>
+								<div class="service-details">
+										<div class="detail" serv-det="1">
+												<div class="service">
+														<div class="service-img"><img src="img/service1.png" /></div>
+														<label>
+																Technology
+														</label>
+												</div>
+												<div>
+													<p>Advanced Analytics to Optimize Your Digital Spend</p>
+													<p>As a marketer, we can bet that you’ve often looked at the digital marketing landscape and wished for a map and compass to guide you through. It’s big and it’s complex, which can make life difficult for you. But our advanced analytics capabilities give you the real-time ROI information you need, 24/7, from actionable insights gained from your customers’ journeys to up-to-date figures for your digital spend and revenue. In the constant battle for market share, our easy-to-grasp marketing intelligence can really give you the edge.</p>
+
+												</div>
+												<div class="close-icon" data="detail">x</div>
+										</div>
+										<div class="detail" serv-det="2">
+												<div class="service">
+														<div class="service-img"><img src="img/service2.png" /></div>
+														<label>
+																Payout
+														</label>
+												</div>
+												<div>
+													<p>Advertisers can set payouts for each campaign and pay either per conversion or per event. This helps them keep tabs on marketing costs for each affiliate and campaign, whether it’s CPA, CPC, CPL, CPS, CPM or revenue sharing. </p>
+													<p>Payouts for affiliates are as regular as clockwork – via Check, PayPal, eCheck, Wire or Bitcoin. </p>
+
+												</div>
+												<div class="close-icon" data="detail">x</div>
+										</div>
+									<div class="detail" serv-det="3">
+											<div class="service">
+													<div class="service-img"><img src="img/service3.png" /></div>
+													<label>
+															24/7 Services
+													</label>
+											</div>
+											<div>
+												<p>Like all the best convenience stores we’re a one-stop-shop, available around the clock to serve you. Every hour of the day:</p>
+												<p>we drive sales, leads, and quality traffic for advertisers. </p>
+												<p>we drive opt-ins that give great commission for affiliates. </p>
+												<p>If you’ve used other companies before, we think you’ll find our hands-on approach to partnering for performance quite refreshing, and if we’re the first company you’ve partnered with, then join us and prepare to be very satisfied with our service!  </p>
+												
+											</div>
+											<div class="close-icon" data="detail">x</div>
+									</div>
 
 								</div>
 							</div>
@@ -178,11 +227,9 @@ We’re here for you no matter what. Let’s do this together, Shall we?
 				</div>
 				<div class="container">
 						<div class="labels">
-							<label>					
-GROW YOUR PROFITS
-							</label>
-							<h2 class="sec-title">ADVERTISERS</h2>
 							<div class="plus-icon" data="advertisers">+</div>
+							<h2 class="sec-title">ADVERTISERS</h2>
+							<label>GROW YOUR PROFITS</label>
 						</div>
 						<div class="adv-content" data-open="advertisers">
 							<div class="close-icon" data="advertisers">x</div>
@@ -211,13 +258,9 @@ Our network offers advertisers a highly effective way to put their product or se
 						</div>
 						<div class="container">
 						<div class="labels">
-							<label>
-OUR RATES ARE THE GREATEST
-
-							</label>
-							<h2 class="sec-title">								AFFILIATE
-</h2>
-							<div class="plus-icon" data="affiliates">+</div>
+								<div class="plus-icon" data="affiliates">+</div>
+								<h2 class="sec-title">AFFILIATE</h2>
+							<label>OUR RATES ARE THE GREATEST</label>				
 						</div>
 						<div class="adv-content" data-open="affiliates">
 						<div class="close-icon" data="advertisers">x</div>
