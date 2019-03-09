@@ -13,13 +13,13 @@ img{max-width:100%}
 video{width:100%;height:570px;object-fit:cover}
 .video iframe{width:100%;height:490px;border:0}
 .dont-show{display:none}
-.number{font-size:88px;color:var(--color1);font-weight:700}
+.number{font-size: 78px;color:var(--color1);font-weight:700;}
 
 .number:after {
     content: "+";
     margin-left: 5px;
 }
-.numbers label{font-size:31px;text-transform:uppercase;font-weight:400;margin-top:-23px}
+.numbers label{font-size: 21px;text-transform:uppercase;font-weight:400;margin-top:-23px;}
 .numbers{margin-top:-57px;float:left;width:90%;margin-left:10%}
 header.header{padding-top:18px;padding-left:55px;padding-right:55px;position:absolute;background:#fff;z-index:999}
 header .header-btns{float:right}
@@ -81,7 +81,7 @@ button.btn.btn-primary:hover{background:#466386}
 #services h2.sec-title{font-size:47px;text-transform:uppercase;color:#fff;margin:0;font-weight:300;float:left;margin-right:21px}
 #services .labels label{font-size:25px;text-transform:uppercase;color:#fff;font-weight:300;width:100%;margin:0}
 #services .plus-icon{float:left;z-index:9;position:relative;margin-top:12px}
-.services-icons{width: 100%;float:left;padding-top:204px;margin-bottom: 58px;}
+.services-icons{width: 100%;float:left;padding-top:204px;margin-bottom: 58px;z-index: 9;position: relative;}
 div#contact{margin-top:118px;color:#3a4b63;padding-bottom:60px}
 #contact h4.sec-title{text-align:center;text-transform:uppercase;color:#3a4b63;font-size:28px;margin-bottom:0}
 #contact .slogan{color:var(--color1);text-align:center;text-transform:uppercase;font-size:53px;margin-bottom:76px}
@@ -89,7 +89,7 @@ div#contact{margin-top:118px;color:#3a4b63;padding-bottom:60px}
 .join h6,.support h6{font-size:23px;font-weight:300}
 .support{border-left:3px solid;margin-bottom:60px}
 button.btn.btn-secondary{width:230px;border-radius:8px;height:42px;margin-top:44px;text-transform:uppercase;font-size:18px;text-align:center;background:var(--color1);border:0;color:#fff}
-#contact button.btn.btn-secondary{margin-top:77px!important;transition:all .5s ease}
+#contact button.btn.btn-secondary{margin-top: 54px!important;transition:all .5s ease;}
 button.btn.btn-secondary:hover{background:#ecb508}
 .footer-nav{float:left;width:100%}
 .footer-nav ul{padding-left:0;text-align:center;font-size:13px}
@@ -140,7 +140,7 @@ div#services{position:relative;height:846px}
 .contact-form a{color:#2a4b69;width:90%;display:block;text-align:center;margin-top:20px;font-size:24px}
 .contact-form textarea:focus,.contact-form input:focus{outline:none}
 button:focus{outline:none}
-.servicesImg img{height:846px;min-width:100%}
+.servicesImg img{height: 871px;min-width:100%;}
 .desktop{display:block}
 .signup-title{text-align:center;color:#151515}
 .signup-cont{width:50%;margin:auto}
@@ -175,22 +175,36 @@ div#partner {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
+.service-details .detail.show {
+    left: 0;
+    opacity: 1;
+    height: 100%;
+    z-index: 999;
+}
 div#partner p {
     font-size: 14px;
     line-height: 26px;
-    padding: 0 100px;
+    padding: 0 160px;
+}
+
+div#partner p.sp {
+    color: var(--color1);
+    margin-bottom: 0;
+}
+
+div#partner p.sp:nth-of-type(3) {
+    margin-bottom: 20px;
 }
 .service-details .detail {
-    /* position: absolute; */
-    /* width: 100vw; */
-    /* left: 0; */
+    position: relative;
+    left: -100vw;
     /* top: 0; */
     /* background: #313f54; */
     /* text-align: center; */
-    /* height: 100%; */
+    /* height: 0; */
     /* padding-top: 50px; */
     display: none;
+    transition: all .5s ease;
 }
 
 .detail.show .close-icon {
@@ -198,6 +212,8 @@ div#partner p {
     position: relative;
     left: 50%;
     margin-left: -20px;
+    margin-top: 30px;
+    line-height: 24px;
 }
 
 .detail .service {
@@ -213,14 +229,14 @@ div#partner p {
     height: 100%;
     padding-top: 220px;
     /* display:none */
-    z-index: 10;
+    /* z-index: 10; */
 }
 .serv-bg.show {
     background: #3a4b63;
     width: 100%;
     height: 846px;
     position: absolute;
-    z-index: 9;
+    z-index: 99;
     /* top: 0; */
     /* bottom: 0; */
 }
@@ -240,6 +256,9 @@ div#goals {
     color: var(--color1);
 }
 @media screen and (max-width:992px) {
+    #goals p {
+    /* padding:  0 200px; */
+}
     #partner .container {
     height: 100%;
 }
@@ -319,7 +338,11 @@ div#main-content{padding-top:80px}
 .join p,.support p{display:none}
 header.header{max-width:100%;padding:15.5px 20px}
 header .logo{width:100px}
-.service-img{opacity:1;height:80px}
+.service-img{opacity:1;height: 70px;/* width: 80px; */}
+
+.service-img img {
+    width: 77px;
+}
 .serviceSquare{display:none}
 .service label{opacity:1;font-size:16px}
 .numbers{margin-left:0}
@@ -327,7 +350,7 @@ header .logo{width:100px}
 .service{width:calc(100%/3)}
 .service:nth-of-type(4),.service:nth-of-type(5){display:none}
 .services-icons{width:100%;bottom: 0;}
-.service{width:calc(100%/3)}
+.service{width:calc(100%/3);}
 .service:nth-of-type(4),.service:nth-of-type(5){display:none}
 .advImg{height:100%;width:100%}
 .double-sec .container .labels{padding-left:10px;padding-top:0;position:absolute;bottom:40px}
@@ -351,10 +374,12 @@ button.mobile.btn.btn-primary.main-btn{left:25px;position:absolute;display:inlin
 .servicesImg img{height:100%}
 }
 @media screen and (min-width:1400px) {
+    #goals h2.sec-title{font-size:50px}
+   #goals p{font-size:16px;line-height:25px}
 .signup-title h1{font-size:50px;font-weight:200}
 .signup-title h2{font-size:24px;font-weight:200}
 .desktop-nav li a{font-size:30px;font-weight:200}
-.servicesImg img{object-fit:initial}
+.servicesImg img{/* object-fit:initial; */}
 .nav-footer{font-size:24px}
 .number{font-size: 80px;}
 .numbers label{font-size: 30px;}
@@ -426,7 +451,7 @@ body.overlay .msg-overlay{display:block}
 .inline-loading{background-image:url(../img/loading.gif);background-repeat:no-repeat;width:16px;height:16px;opacity:.6;display:inline-block;margin-left:8px}
 .signup-status.success{color:#155f4b}
 .signup-status.failure{color:#ff154b}
-.container{display:block;position:relative;padding-left:25px;margin-bottom:12px;cursor:pointer;font-size:13px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.container{display:block;position:relative;padding-left:25px;margin-bottom:12px;cursor:pointer;font-size:13px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 .container input{position:absolute;opacity:0;cursor:pointer;height:0}
 .checkmark{position:absolute;top:13px;left:4px;height:15px;width:15px;background-color:#fff;border:1px solid #363636;z-index:99}
 .checkmark:after{content:"";position:absolute;display:none}
