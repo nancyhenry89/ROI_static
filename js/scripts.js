@@ -114,7 +114,7 @@
         } else {
             $('.prev').hide();
         }
-        if (current >= 3) {
+        if (current >= 4) {
             $('.next').hide();
         } else {
             $('.next').fadeIn();
@@ -130,7 +130,7 @@
         } else {
             $('.prev').hide();
         }
-        if (current >= 3) {
+        if (current >= 4) {
             $('.next').hide();
         } else {
             $('.next').fadeIn();
@@ -184,12 +184,12 @@
             $('#affiliates .plus-icon').removeClass('animate');
         }
                 */
-        if ($('#services .labels').isInViewport()){
+      /*  if ($('#services .labels').isInViewport()){
             $('#services .serviceSquare').addClass('animate');
         }else{
             $('#services .serviceSquare').removeClass('animate');
         }
-
+*/
     });
 
 })(jQuery, this);
@@ -198,10 +198,10 @@
 //left of for show sections 
 function calcLeft() {
 
-    var advLeft =  $('#advertisers .sec-title').width() + 50;
-    var affLeft =  $('#affiliates .sec-title').width() + 50;
-    var serLeft =  $('#services .sec-title').width() + 28;
-    $('#advertisers .adv-content').css('left', advLeft);
+    var advLeft =  $('#advertisers .labels label').width() + 50;
+    var affLeft =  $('#affiliates .labels label').width() + 50;
+    var serLeft =  $('#services .labels label').width() + 28;
+    $('#advertisers .adv-content').css('left', affLeft);//because in new PSD the both depend on aff label
     $('#affiliates .adv-content').css('left', affLeft);
     $('#services .adv-content').css('left', serLeft);
 
@@ -210,7 +210,7 @@ function calcLeft() {
 function calcWidth() {
     var advWidth = $('#advertisers .container').width() - $('#advertisers .labels').width() + 28;
     var affWidth = $('#affiliates .container').width() - $('#affiliates .labels').width() + 28;
-    var affWidth = $('#services .container').width() - $('#services .labels').width() + 28;
+ //   var affWidth = $('#services .container').width() - $('#services .labels').width() + 28;
     $('#advertisers .adv-content').css('width', advWidth);
     $('#affiliates .adv-content').css('width', affWidth);
     $('#services .adv-content').css('width', affWidth);
@@ -283,7 +283,8 @@ function windowHeight(){
     $('#mainSec').css('height',height); 
     $('#advertisers').css('height',height/2); 
     $('#affiliates').css('height',height/2); 
-    $('#services').css('height',height); 
+   // $('#partner').css('height',height); 
+    $('#goals').css('height',height); 
 
 }
 
