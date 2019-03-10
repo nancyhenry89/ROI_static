@@ -49,10 +49,11 @@
 						<div class="open">	<img src="img/open.png" ></div>
 						<div class="close">	<img src="img/close.png" ></div>
 						<ul>
+							<li><a href="#partner">Partner with us</a></li>
 							<li><a href="#advertisers">Advertisers</a></li>
 							<li><a href="#affiliates">Affiliates</a></li>
 							<li><a href="#about">About</a></li>
-							<li><a href="#services">Services</a></li>
+							<li><a href="#goals">Goals</a></li>
 							<li><a href="#contact">Contact</a></li>
 							<div class="nav-footer">
 					<a href="marketing@roi.boutique" target="_top">marketing@roi.boutique</a>
@@ -66,10 +67,11 @@
 						<div class="close">	<img src="img/close.png" ></div>
 						<ul>
 							<li class="login-nav"><a href="#">Login</a></li>
+							<li><a href="#partner">Partner with us</a></li>
 							<li><a href="#advertisers">Advertisers</a></li>
 							<li><a href="#affiliates">Affiliates</a></li>
 							<li><a href="#about">About</a></li>
-							<li><a href="#services">Services</a></li>
+							<li><a href="#goals">Goals</a></li>
 							<li><a href="#contact">Contact</a></li>
 							<div class="mobile-nav-footer">
 								<div>
@@ -223,9 +225,12 @@ We’re here for you no matter what. Let’s do this together, Shall we?
 			<!--advertisers start-->
 
 			<div id="advertisers" class="container-fluid double-sec sec">
-				<div class="advImg">
+				<div class="advImg desktop">
 					<img src="img/adv.png" />
 				</div>
+				<div class="advImg mobile">
+						<img src="img/adv-mob.png" />
+					</div>
 				<div class="container">
 						<div class="labels">
 							<div class="plus-icon" data="advertisers">+</div>
@@ -234,6 +239,10 @@ We’re here for you no matter what. Let’s do this together, Shall we?
 						</div>
 						<div class="adv-content" data-open="advertisers">
 							<div class="close-icon" data="advertisers">x</div>
+							<div class="labels mobile">
+									<h2 class="sec-title">ADVERTISERS</h2>
+									<label>GROW YOUR PROFITS</label>
+								</div>
 							<p>Performance marketing means you only pay for results</p>
 							<p>Gone are the days when you paid for an advert and crossed your fingers. Performance marketing offers your business measurable value, because you only pay when something happens, like when someone clicks on your ad or when an ad brings you a new customer. </p>
 							<p>It’s undoubtedly the best way to see measurable results from your marketing efforts. Whether you’re looking to generate leads, boost sales, or increase installations of your latest app, we can help you. </p>
@@ -251,9 +260,13 @@ We’re here for you no matter what. Let’s do this together, Shall we?
 
 			<div id="affiliates" class="container-fluid double-sec sec">
 
-						<div class="advImg">
+						<div class="advImg desktop">
 							<img src="img/aff.png" />
 						</div>
+
+						<div class="advImg mobile">
+								<img src="img/aff-mob.png" />
+							</div>
 						<div class="container">
 						<div class="labels">
 								<div class="plus-icon" data="affiliates">+</div>
@@ -262,6 +275,10 @@ We’re here for you no matter what. Let’s do this together, Shall we?
 						</div>
 						<div class="adv-content" data-open="affiliates">
 						<div class="close-icon" data="advertisers">x</div>
+						<div class="labels mobile">
+								<h2 class="sec-title">AFFILIATE</h2>
+							<label>OUR RATES ARE THE GREATEST</label>				
+						</div>
 							<p>At ROI-Boutique, we’re all about better ROI </p>
 							<p>Since we carefully vet every offer, we can narrow down your choices to the campaigns that are going to convert well for you. Our tracking is sound, so you won’t miss a click, and payments are quick and regular, thanks to our ongoing focus on innovation. We cater for every type of traffic, so you can always be sure that yours will generate the best earnings. </p>
 							<a href="signUp.html">
@@ -475,7 +492,7 @@ wp_reset_postdata();
 								<h6>Get Support</h6>
 									<p>Curious how we can help? 
 we’re always happy to communicate and answer your questions</p>
-									<button class="btn btn-secondary" id="contactForm">Get in touch</button>
+									<button class="btn btn-secondary" id="contactForm"><i class="fas fa-envelope mobile"></i>Get in touch</button>
 									<div class="contact-form">
 										<div class="close">x</div>
 										<input type="text" name="Name" placeholder="Name"/>

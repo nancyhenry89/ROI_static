@@ -38,7 +38,7 @@ header{float:left;width:100%;padding-bottom:20px}
 .advImg{position:absolute;width:100%;z-index:-1;height:488px}
 .double-sec{height:488px;position:relative;transition:all .5s ease}
 .double-sec h2.sec-title{font-size:39px;text-transform:uppercase;color:#fff;margin:0;font-weight:400;float:left;margin-right:21px;width: 100%;}
-.double-sec label{font-size:25px;text-transform:uppercase;color:#fff;font-weight:400;width: auto;margin:0;display: block;float: left;}
+.double-sec label{font-size:25px;text-transform:uppercase;color:#fff;font-weight:400;width: auto;margin:0;display: block;float: left;font-weight: lighter;}
 .plus-icon{font-size:24px;color:#ca9f18;border:3px solid #ca9f18;width:35px;height:35px;line-height:24px;text-align:center;margin-top:5px;font-weight:700;transition:all .5s ease;cursor:pointer;z-index:999}
 .double-sec .plus-icon{float:left;position: absolute;top: -60px;}
 .adv-content p{opacity:0;margin-bottom: 0;margin-bottom: 8px;}
@@ -47,14 +47,14 @@ header{float:left;width:100%;padding-bottom:20px}
 div#mainSec{padding-bottom:115px}
 .double-sec .container .labels{margin-top: 316px;float:left;z-index: 99;position: relative;}
 .advImg img{height:100%;min-width:100%;object-fit:cover}
-.data-show p{transform:translateY(40px) translateZ(0);transition:transform 1s cubic-bezier(.23,1,.32,1),opacity .2s;line-height:17px}
+.data-show p{transform:translateY(40px) translateZ(0);transition:transform 1s cubic-bezier(.23,1,.32,1),opacity .2s;line-height:17px;}
 .adv-content{padding-top:20px;font-size:14px;float:left;width:700px;position:absolute;left:calc(563px + 28px);bottom:7px;transition:all .5s ease;max-width:100%;color: #fff;/* z-index: 99999; */}
 
 .adv-content.data-show {
     z-index: 99999;
 }
 #services .adv-content{bottom:335px}
-.adv-content a{color:#ca9f19;font-size:20px;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid;text-decoration:none;opacity:0;display:inline-block;float:left;margin-top: 60px;border: 2px solid;border-radius: 5px;width: 300px;text-align: center;line-height: 36px;}
+.adv-content a{color:#ca9f19;font-size:20px;text-transform:uppercase;/* padding-bottom:4px; */border-bottom:1px solid;text-decoration:none;opacity:0;display:inline-block;float:left;margin-top: 60px;border: 2px solid;border-radius: 5px;width: 300px;text-align: center;line-height: 36px;}
 .sec.data-visible{background: rgba(32,40,50,1);}
 div#about{padding-top:83px!important;position:relative;padding-bottom:100px!important}
 #about h2.sec-title{color:var(--color1);text-transform:uppercase;font-size:36px;margin-bottom:23px;margin-top:0}
@@ -75,7 +75,7 @@ button.btn.btn-primary:hover{background:#466386}
 .servicesImg{position:absolute;width:100%;z-index:-1;height:100%}
 .servicesImg img{object-fit:cover}
 .service{width: calc(100%/3);float:left;text-align:center;color:#fff;position:relative;}
-.service label{font-weight:400;opacity:1;transition:all .5s ease;width:100%;margin-top: 26px;font-size: 22px;}
+.service label{font-weight:400;opacity:1;transition:all .5s ease;width:100%;margin-top: 26px;font-size: 22px;font-weight: lighter;}
 .service label span{color: var(--color1);}
 #services .labels{padding-top:356px;float:left;font-weight:300}
 #services h2.sec-title{font-size:47px;text-transform:uppercase;color:#fff;margin:0;font-weight:300;float:left;margin-right:21px}
@@ -121,7 +121,7 @@ footer.footer a{color:#a5a5a5}
 .desktop-nav .close{opacity:0;width:69px;transition:transform .5s ease;transform:rotate(-45deg);position:absolute;top:0;left:30px}
 .desktop-nav li a:hover{color:var(--color1);text-decoration:none}
 .desktop-nav .open{position:absolute;z-index:999;cursor:pointer;transition:transform .5s ease;left:30px;top:0;width:50px}
-.desktop-nav.open-nav ul{opacity:1;left:0;padding-left:160px;padding-right:100px;}
+.desktop-nav.open-nav ul{opacity:1;left:0;padding-left: 130px;padding-right: 50px;width: 390px;}
 .desktop-nav.open-nav .open{opacity:0;transform:rotate(45deg)}
 .desktop-nav.open-nav .close{opacity:1;transform:rotate(0deg);z-index:999}
 div#main-content{padding-top:90px;overflow:hidden}
@@ -174,6 +174,7 @@ div#partner {
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-weight: lighter;
 }
 .service-details .detail.show {
     left: 0;
@@ -185,6 +186,7 @@ div#partner p {
     font-size: 14px;
     line-height: 26px;
     padding: 0 160px;
+    font-weight: lighter;
 }
 
 div#partner p.sp {
@@ -247,6 +249,12 @@ div#goals {
     padding: 50px 0!important;
 }
 
+#goals p {
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 0 150px;
+}
+
 #goals h2.sec-title {
     color: var(--color1);
     font-size: 36px;
@@ -255,26 +263,54 @@ div#goals {
 }
 .about_sec h5,.about_sec h6 {
     color: var(--color1);
+    font-weight: normal;
+    background-color: white;
 }
-@media screen and (max-width:992px) {
+
+.about_sec h6 {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.about_sec {
+    font-weight: lighter;
+}
+
+.about_sec p {
+    font-size: 14px;
+}
+.about_sec h5 {
+    font-size: 16px;
+}
+@media screen and (max-width: 992px) {
+    i.fas.fa-envelope.mobile {
+        display: inline;
+        margin-right: 10px;
+    }
     #goals p {
-    /* padding:  0 200px; */
+    padding: 0;
+    font-size: 14px;
 }
     #partner .container {
     height: 100%;
 }
     div#partner p {
-        padding: 0;
+        padding: 0 15px;
+        font-size: 14px;
     }
     
     div#partner {
         position: relative;
-        height: 850px;
+        height: 900px;
     }
+
+div#partner button.btn.btn-secondary {
+    width: 100%;
+}
     
     #partner h2.sec-title {
         margin-top: 30px;
         margin-bottom: 30px;
+        font-size: 36px;
     }
     .wrapper.container-fluid {
         overflow: scroll;
@@ -335,6 +371,10 @@ div#main-content{padding-top:80px}
 #contact h4.sec-title{text-align:left;margin-top:20px}
 #contact .slogan{text-align:left;font-size:27px;margin-bottom:0}
 .join,.support{padding-left:0}
+
+.join .btn.btn-primary {
+    width: 100%;
+}
 .join h6,.support h6{display:none}
 .join p,.support p{display:none}
 header.header{max-width:100%;padding:15.5px 20px}
@@ -346,6 +386,10 @@ header .logo{width:100px}
 }
 .serviceSquare{display:none}
 .service label{opacity:1;font-size:16px}
+
+.detail .service label {
+    font-size: 20px;
+}
 .numbers{margin-left:0}
 .services-icons{width:100%;padding-top:0;position:absolute;bottom:50px;left:0}
 .service{width:calc(100%/3)}
@@ -354,12 +398,30 @@ header .logo{width:100px}
 .service{width:calc(100%/3);}
 .service:nth-of-type(4),.service:nth-of-type(5){display:none}
 .advImg{height:100%;width:100%}
-.double-sec .container .labels{padding-left:10px;padding-top:0;position:absolute;bottom:40px}
+.double-sec .container .labels{padding-left:10px;padding-top:0;position:absolute;bottom: 80px;}
+.double-sec .container .labels.mobile {
+    position: relative;
+    bottom: auto;
+    margin-top: 40px;
+    padding-left: 0;
+}
+.adv-content a {
+    width: 100%;
+}
 .advImg img{width:auto;object-fit:cover}
 .double-sec{overflow:hidden}
 .double-sec .container{height:100%}
-div#about{padding-top:20px!important}
-.double-sec h2.sec-title{width:100%}
+div#about{padding-top:20px!important;padding-bottom: 0!important;}
+.double-sec h2.sec-title{width:100%;font-size: 34px;}
+
+.double-sec label {
+    font-size: 23px;
+}
+
+.double-sec .plus-icon {
+    top: auto;
+    bottom: -39px;
+}
 .numbers>div{position:absolute;opacity:0;transition:all .5s ease}
 .open-nav.mobile-nav ul{opacity:1;height:100vh;overflow:scroll;padding-bottom:40px}
 li.login-nav a{color:var(--color1)}
