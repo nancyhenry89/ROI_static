@@ -45,7 +45,7 @@ header{float:left;width:100%;padding-bottom:20px}
 .video{margin-top:13px;float:left;width:100%;height:570px;overflow:hidden}
 .video>div{padding:0}
 div#mainSec{padding-bottom:115px}
-.double-sec .container .labels{margin-top: 316px;float:left;z-index: 99999;position: relative;}
+.double-sec .container .labels{margin-top: 316px;float:left;z-index: 99;position: relative;}
 .advImg img{height:100%;min-width:100%;object-fit:cover}
 .data-show p{transform:translateY(40px) translateZ(0);transition:transform 1s cubic-bezier(.23,1,.32,1),opacity .2s;line-height:17px}
 .adv-content{padding-top:20px;font-size:14px;float:left;width:700px;position:absolute;left:calc(563px + 28px);bottom:7px;transition:all .5s ease;max-width:100%;color: #fff;/* z-index: 99999; */}
@@ -58,7 +58,7 @@ div#mainSec{padding-bottom:115px}
 .sec.data-visible{background: rgba(32,40,50,1);}
 div#about{padding-top:83px!important;position:relative;padding-bottom:100px!important}
 #about h2.sec-title{color:var(--color1);text-transform:uppercase;font-size:36px;margin-bottom:23px;margin-top:0}
-button.btn.btn-primary{width:230px;border-radius:8px;height:42px;margin-top:18px;text-transform:uppercase;font-size:18px;text-align:center;background:#3a4b63;border:0;transition:all .5s ease}
+.btn.btn-primary{width:230px;border-radius:8px;height:42px;margin-top:18px;text-transform:uppercase;font-size:18px;text-align:center;background:#3a4b63;border:0;transition:all .5s ease}
 button.btn.btn-primary a{color:#fff;text-decoration:none}
 .signUp button.btn.btn-primary{width:464px;left:50%;position:relative;margin-left:-232px;top:20px;max-width:100%}
 button.btn.btn-primary:hover{background:#466386}
@@ -113,7 +113,7 @@ footer.footer a{color:#a5a5a5}
 100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }
 .double-sec .plus-icon:hover{-moz-animation:spin 4s linear infinite}
-.desktop-nav ul{list-style:none;position:absolute;top:-40%;opacity:0;transition:all .5s ease;left:-30px;height:100%;background:#fff;height:100vh;padding-top:29vh;box-shadow:1px 19px 48px 1px #888}
+.desktop-nav ul{list-style:none;position:absolute;top:-40%;opacity:0;transition:all .5s ease;left: -30px;height:100%;background:#fff;height:100vh;padding-top:29vh;box-shadow:1px 19px 48px 1px #888;}
 .desktop-nav li{height:60px}
 .desktop-nav li a{color:#1b232e;font-size:25px;transition:all .5s ease}
 .desktop-nav li a.current-sec{text-decoration:none;color:var(--color1)}
@@ -121,7 +121,7 @@ footer.footer a{color:#a5a5a5}
 .desktop-nav .close{opacity:0;width:69px;transition:transform .5s ease;transform:rotate(-45deg);position:absolute;top:0;left:30px}
 .desktop-nav li a:hover{color:var(--color1);text-decoration:none}
 .desktop-nav .open{position:absolute;z-index:999;cursor:pointer;transition:transform .5s ease;left:30px;top:0;width:50px}
-.desktop-nav.open-nav ul{opacity:1;left:0;padding-left:160px;padding-right:100px}
+.desktop-nav.open-nav ul{opacity:1;left:0;padding-left:160px;padding-right:100px;}
 .desktop-nav.open-nav .open{opacity:0;transform:rotate(45deg)}
 .desktop-nav.open-nav .close{opacity:1;transform:rotate(0deg);z-index:999}
 div#main-content{padding-top:90px;overflow:hidden}
@@ -251,6 +251,7 @@ div#goals {
     color: var(--color1);
     font-size: 36px;
     margin-bottom: 23px;
+    font-weight: lighter;
 }
 .about_sec h5,.about_sec h6 {
     color: var(--color1);
@@ -396,7 +397,7 @@ div#mainSec{margin-top:50px;padding-bottom:145px}
 #about h2.sec-title{font-size:50px}
 .about_sec{font-size:16px;line-height:23px;margin-right:40px}
 .about-arrows{bottom:84px}
-button.btn.btn-primary{font-size:24px;height:50px;width:250px}
+.btn.btn-primary{font-size:24px;height:50px;width:250px}
 .next span,.prev span{font-size:20px}
 #services h2.sec-title{font-size:60px}
 #services .labels label{font-size:30px}

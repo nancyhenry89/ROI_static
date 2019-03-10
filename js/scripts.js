@@ -5,21 +5,24 @@
             $(item).remove(); // $(item).remove();
         }
     });
+
     var isMobile = window.matchMedia("only screen and (max-width: 992px)");
     services();
     $(function() {
 
         'use strict';
         checklist();
+        
+
         if($('.home').length){
         
+            document.getElementById('vid').play();
 
  
     $("html, body, .wrapper").css({
         height: $(window).height()
 })
 }
-//document.getElementById('vid').play();
         $('.plus-icon').click(function() {
             $(this).hide();
             var data = $(this).attr('data');
