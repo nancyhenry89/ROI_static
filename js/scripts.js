@@ -302,7 +302,6 @@ function windowHeight(){
 function checklist(){
 
     $('.placeholder').click(function(){
-      
         if($(this).parents('.checkbox-list').hasClass('open')){
             $(this).parents('.checkbox-list').removeClass('open');
         }else{

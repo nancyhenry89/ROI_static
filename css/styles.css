@@ -316,6 +316,7 @@ div#partner button.btn.btn-secondary {
         overflow: scroll;
     }
     body{overflow: hidden;}
+    body#sign{overflow: scroll}
 #services .plus-icon{margin-top:5px}
 .signup-title h1{font-size:26px}
 .signup-title h2{font-size:18px}
