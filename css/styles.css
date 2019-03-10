@@ -51,6 +51,10 @@ div#mainSec{padding-bottom:115px}
 div#about{padding-top:83px!important;position:relative;padding-bottom:100px!important}
 #about h2.sec-title{color:var(--color1);text-transform:uppercase;font-size:36px;margin-bottom:23px;margin-top:0}
 .btn.btn-primary{width:230px;border-radius:8px;height:42px;margin-top:18px;text-transform:uppercase;font-size:18px;text-align:center;background:#3a4b63;border:0;transition:all .5s ease}
+
+a.btn.btn-primary {
+    line-height: 30px;
+}
 button.btn.btn-primary a{color:#fff;text-decoration:none}
 .signUp button.btn.btn-primary{width:464px;left:50%;position:relative;margin-left:-232px;top:20px;max-width:100%}
 button.btn.btn-primary:hover{background:#466386}
@@ -68,6 +72,10 @@ button.btn.btn-primary:hover{background:#466386}
 .servicesImg img{object-fit:cover}
 .service{width:calc(100%/3);float:left;text-align:center;color:#fff;position:relative}
 .service label{font-weight:400;opacity:1;transition:all .5s ease;width:100%;margin-top:26px;font-size:22px;font-weight:lighter}
+
+.detail .service label {
+    margin-bottom: 40px;
+}
 .service label span{color:var(--color1)}
 #services .labels{padding-top:356px;float:left;font-weight:300}
 #services h2.sec-title{font-size:47px;text-transform:uppercase;color:#fff;margin:0;font-weight:300;float:left;margin-right:21px}
@@ -82,6 +90,10 @@ div#contact{margin-top:118px;color:#3a4b63;padding-bottom:60px}
 .support{border-left:3px solid;margin-bottom:60px}
 button.btn.btn-secondary{width:230px;border-radius:8px;height:42px;margin-top:44px;text-transform:uppercase;font-size:18px;text-align:center;background:var(--color1);border:0;color:#fff}
 #contact button.btn.btn-secondary{margin-top:54px!important;transition:all .5s ease}
+
+button.btn.btn-secondary:focus {
+    outline: none;
+}
 button.btn.btn-secondary:hover{background:#ecb508}
 .footer-nav{float:left;width:100%}
 .footer-nav ul{padding-left:0;text-align:center;font-size:13px}
@@ -157,8 +169,8 @@ h2.header2{display:none}
 100%{opacity:1}
 }
 div#partner{text-align:center;color:#fff}
-#partner h2.sec-title{font-family:var(--main-font);font-size:50px;margin-top:50px;margin-bottom:50px;font-weight:lighter}
-.service-details .detail.show{left:0;opacity:1;height:100%;z-index:999}
+#partner h2.sec-title{font-family:var(--main-font);font-size: 40px;margin-top:50px;margin-bottom:50px;font-weight:lighter;}
+.service-details .detail.show{left:0;opacity:1;height:100%;z-index: 99;}
 div#partner p{font-size:14px;line-height:26px;padding:0 160px;font-weight:lighter}
 div#partner p.sp{color:var(--color1);margin-bottom:0}
 div#partner p.sp:nth-of-type(3){margin-bottom:20px}
@@ -173,9 +185,15 @@ div#goals{background:#3a4b63;color:#fff;text-align:center;padding:50px 0!importa
 .about_sec h5,.about_sec h6{color:var(--color1);font-weight:400;background-color:#fff}
 .about_sec h6{font-size:14px;font-weight:lighter}
 .about_sec{font-weight:lighter}
-.about_sec p{font-size:14px}
+.about_sec p{font-size:14px;font-weight: normal;}
 .about_sec h5{font-size:16px}
 @media screen and (max-width: 992px) {
+    #about a.btn.btn-primary {
+        width: 100%;
+    }
+    #about .container {
+        padding-left: 15px;
+    }
 i.fas.fa-envelope.mobile{display:inline;margin-right:10px}
 #goals p{padding:0;font-size:14px}
 #partner .container{height:100%}
@@ -284,7 +302,11 @@ button.mobile.btn.btn-primary.main-btn{left:25px;position:absolute;display:inlin
 .servicesImg img{height:100%}
 }
 @media screen and (min-width:1400px) {
-#goals h2.sec-title{font-size:50px}
+#goals h2.sec-title,#partner h2.sec-title{font-size:50px}
+
+div#partner p {
+    font-size: 16px;
+}
 #goals p{font-size:16px;line-height:25px}
 .signup-title h1{font-size:50px;font-weight:200}
 .signup-title h2{font-size:24px;font-weight:200}
@@ -301,11 +323,15 @@ div#mainSec{margin-top:50px;padding-bottom:145px}
 .double-sec h2.sec-title{font-size:50px}
 .plus-icon{width:40px;height:40px;border:4px solid;font-size:29px;line-height:27px;margin-top:12px;z-index:999}
 #services .plus-icon{margin-top:20px}
-.close-icon{width:40px;height:40px;font-size:29px;line-height:30px}
+.detail.show .close-icon{width:40px;height:40px;font-size:29px;line-height: 30px;}
 #about h2.sec-title{font-size:50px}
 .about_sec{font-size:16px;line-height:23px;margin-right:40px}
 .about-arrows{bottom:84px}
 .btn.btn-primary{font-size:24px;height:50px;width:250px}
+
+a.btn.btn-primary {
+    line-height: 40px;
+}
 .next span,.prev span{font-size:20px}
 #services h2.sec-title{font-size:60px}
 #services .labels label{font-size:30px}
@@ -314,8 +340,16 @@ div#mainSec{margin-top:50px;padding-bottom:145px}
 .join h6,.support h6{font-size:30px}
 #contact p{font-size:16px}
 button.btn.btn-secondary{font-size:24px;height:50px;width:250px}
+
+.services-icons {
+    padding-top: 160px;
+}
 #contact button.btn.btn-secondary{margin-top:84px!important}
 .adv-content{bottom:5px}
+
+.close-icon {
+    line-height: 28px;
+}
 }
 form::-webkit-input-placeholder{color:#5f5f5f;font-size:15px}
 form::-moz-placeholder{color:#5f5f5f;font-size:15px}
