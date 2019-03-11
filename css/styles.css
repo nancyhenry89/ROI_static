@@ -188,6 +188,12 @@ div#goals{background:#3a4b63;color:#fff;text-align:center;padding:50px 0!importa
 .about_sec p{font-size:14px;font-weight: normal;}
 .about_sec h5{font-size:16px}
 @media screen and (max-width: 992px) {
+    @keyframes MoveUpDownMob {
+        0%,100%{bottom:-39}
+        50%{bottom:-60px}
+        }
+        .plus-icon{animation:MoveUpDownMob 1s linear infinite}
+
     #about a.btn.btn-primary {
         width: 100%;
     }
@@ -286,7 +292,7 @@ header .logo{width:100px}
 div#about{padding-top:20px!important;padding-bottom:0!important}
 .double-sec h2.sec-title{width:100%;font-size:34px}
 .double-sec label{font-size:23px}
-.double-sec .plus-icon{top:auto;bottom:-39px}
+.double-sec .plus-icon{top:auto;bottom:-39px;left: 10px;}
 .numbers>div{position:absolute;opacity:0;transition:all .5s ease}
 .open-nav.mobile-nav ul{opacity:1;height:100vh;overflow:scroll;padding-bottom:40px}
 li.login-nav a{color:var(--color1)}
