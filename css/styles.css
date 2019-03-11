@@ -1,12 +1,12 @@
 :root{--textcolor:#1b232e;--color1:#ca9f16;--main-font:'Bio Sans',sans-serif}
 @keyframes MoveUpDown {
 0%,100%{bottom:0}
-50%{bottom:-20px}
+50%{top:-100px}
 }
 @keyframes zoom {
 50%{opacity:1;border-radius:0;transform:scale(1.3)}
 }
-.plus-icon.animate{animation:MoveUpDown 1s linear infinite;position:relative;left:0;bottom:0}
+.plus-icon{animation:MoveUpDown 1s linear infinite;position:relative;left:0;bottom:0;}
 body{font-family:var(--main-font);color:var(--textcolor)}
 img{max-width:100%}
 video{width:100%;height:570px;object-fit:cover}
@@ -35,7 +35,7 @@ header{float:left;width:100%;padding-bottom:20px}
 .double-sec h2.sec-title{font-size:39px;text-transform:uppercase;color:#fff;margin:0;font-weight:400;float:left;margin-right:21px;width:100%}
 .double-sec label{font-size:25px;text-transform:uppercase;color:#fff;font-weight:400;width:auto;margin:0;display:block;float:left;font-weight:lighter}
 .plus-icon{font-size:24px;color:#ca9f18;border:3px solid #ca9f18;width:35px;height:35px;line-height:24px;text-align:center;margin-top:5px;font-weight:700;transition:all .5s ease;cursor:pointer;z-index:999}
-.double-sec .plus-icon{float:left;position:absolute;top:-60px}
+.double-sec .plus-icon{float:left;position:absolute;top:-60px;}
 .adv-content p{opacity:0;margin-bottom:0;margin-bottom:8px}
 .video{margin-top:13px;float:left;width:100%;height:570px;overflow:hidden}
 .video>div{padding:0}
@@ -116,7 +116,7 @@ footer.footer a{color:#a5a5a5}
 @keyframes spin {
 100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}
 }
-.double-sec .plus-icon:hover{-moz-animation:spin 4s linear infinite}
+
 .desktop-nav ul{list-style:none;position:absolute;top:-40%;opacity:0;transition:all .5s ease;left:-30px;height:100%;background:#fff;height:100vh;padding-top:29vh;box-shadow:1px 19px 48px 1px #888}
 .desktop-nav li{height:60px}
 .desktop-nav li a{color:#1b232e;font-size:25px;transition:all .5s ease}
