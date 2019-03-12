@@ -188,6 +188,7 @@ div#goals{background:#3a4b63;color:#fff;text-align:center;padding:50px 0!importa
 .about_sec p{font-size:14px;font-weight: normal;}
 .about_sec h5{font-size:16px}
 @media screen and (max-width: 992px) {
+    div#goals{min-height: 680px;}
     @keyframes MoveUpDownMob {
         0%,100%{bottom:-39}
         50%{bottom:-60px}
